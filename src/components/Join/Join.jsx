@@ -35,19 +35,10 @@ const Join = () => {
         </div>
       </div>
       <div className="right-j">
-        <form className="email-container" onSubmit={validateEmail}>
-          <input
-            required
-            type="email"
-            name="user_email"
-            placeholder="Enter your Email Address here"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          {errorMessage && <div className="error-message">{errorMessage}</div>}
-          <button type="submit" className="btn btn-j">Join now</button>
-        </form>
-      </div>
+    
+      <Link to={`/Contact`} className="btn btn-j">
+            Contact Us
+          </Link>      </div>
     </div>
   );
 };
